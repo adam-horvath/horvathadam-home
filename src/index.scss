@@ -1,0 +1,38 @@
+@import 'styles/mixins';
+@import 'styles/colors';
+
+@font-face {
+  font-family: 'JmhTypewriter';
+  src: local('JmhTypewriter'), url(assets/fonts/jmh-typewriter.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  src: local('Montserrat'), url(assets/fonts/Montserrat-Regular.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'MontserratBold';
+  font-weight: 700;
+  src: local('Montserrat'), url(assets/fonts/Montserrat-SemiBold.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'MontserratBlack';
+  font-weight: 900;
+  src: local('Montserrat'), url(assets/fonts/Montserrat-Bold.ttf) format('opentype');
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif !important;
+  color: $black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

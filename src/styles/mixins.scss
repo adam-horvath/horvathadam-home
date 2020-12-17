@@ -1,0 +1,139 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 575px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) !default;
+
+@function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+  $n: index($breakpoint-names, $name);
+  @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+  $next: breakpoint-next($name, $breakpoints);
+  @return if($next, breakpoint-min($next, $breakpoints) - 1px, null);
+}
+
+@function breakpoint-next($name, $breakpoints: $grid-breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+  $n: index($breakpoint-names, $name);
+  @return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @return if($min != 0, $min, null);
+}
+
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+  $next: breakpoint-next($name, $breakpoints);
+  @return if($next, breakpoint-min($next, $breakpoints) - 1px, null);
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
+  $max: breakpoint-max($name, $breakpoints);
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-only($name, $breakpoints: $grid-breakpoints) {
+  @include media-breakpoint-up($name, $breakpoints) {
+    @include media-breakpoint-down($name, $breakpoints) {
+      @content;
+    }
+  }
+}
+
+@mixin media-breakpoint-between($name, $name2, $breakpoints: $grid-breakpoints) {
+  @include media-breakpoint-up($name, $breakpoints) {
+    @include media-breakpoint-down($name2, $breakpoints) {
+      @content;
+    }
+  }
+}
+
+@mixin custom-media-breakpoint-down($max) {
+  @if $max {
+    @media (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin custom-media-breakpoint-up($min) {
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@function rem-calc($size) {
+  @return $size / 16 * 1rem;
+}
+
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+  -khtml-#{$property}: #{$value};
+  -moz-#{$property}: #{$value};
+  -ms-#{$property}: #{$value};
+  -o-#{$property}: #{$value};
+  #{$property}: #{$value};
+}
+
+@mixin rounded-image($size) {
+  width: #{$size}px;
+  height: #{$size}px;
+  border-radius: 50%;
+}
+
+@mixin background($imageUri, $r: 51, $g: 51, $b: 51) {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#333333+0,333333+33&1+0,0+79 */
+  background: -moz-linear-gradient(
+      left,
+      unquote('rgba(#{$r}, #{$g}, #{$b}, 1)') 0%,
+      unquote('rgba(#{$r}, #{$g}, #{$b}, 0.58)') 40%,
+      unquote('rgba(#{$r}, #{$g}, #{$b}, 0)') 79%
+    ),
+    url('../assets/images/#{$imageUri}'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+      left,
+      unquote('rgba(#{$r}, #{$g}, #{$b}, 1)') 0%,
+      unquote('rgba(#{$r}, #{$g}, #{$b}, 0.58)') 40%,
+      unquote('rgba(#{$r}, #{$g}, #{$b}, 0)') 79%
+    ),
+    url('../assets/images/#{$imageUri}'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+      to right,
+      unquote('rgba(#{$r}, #{$g}, #{$b}, 1)') 0%,
+      unquote('rgba(#{$r}, #{$g}, #{$b}, 0.58)') 40%,
+      unquote('rgba(#{$r}, #{$g}, #{$b}, 0)') 79%
+    ),
+    url('../assets/images/#{$imageUri}'); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

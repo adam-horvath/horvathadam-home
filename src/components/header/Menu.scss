@@ -1,0 +1,29 @@
+@import 'styles/colors';
+@import 'styles/mixins';
+
+.menu {
+  display: flex;
+  a {
+    z-index: 10;
+    color: white !important;
+    text-transform: uppercase;
+    padding: rem-calc(10);
+    .menu-entry {
+      transition: all 0.1s ease-in-out;
+      font-weight: bold;
+      &:hover {
+        color: white;
+      }
+      &.active {
+        color: $orange;
+        text-shadow: 0 0 3px #111111cc;
+      }
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}

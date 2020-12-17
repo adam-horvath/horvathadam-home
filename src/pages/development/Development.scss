@@ -1,0 +1,11 @@
+@import 'styles/mixins';
+
+.techs {
+  margin-top: rem-calc(-16);
+  @include media-breakpoint-down(md) {
+    .tech-row {
+      margin: 0 rem-calc(16);
+      justify-content: space-around;
+    }
+  }
+}

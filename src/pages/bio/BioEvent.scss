@@ -1,0 +1,15 @@
+@import 'styles/colors';
+@import 'styles/mixins';
+.year-card-container {
+  &:first-child {
+    .section-title {
+      margin-top: 0 !important;
+    }
+  }
+  .year-card-text {
+    a {
+      color: $orange;
+      text-transform: none;
+    }
+  }
+}

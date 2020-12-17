@@ -1,0 +1,79 @@
+@import 'styles/colors';
+@import 'styles/mixins';
+@import 'styles/constants';
+
+header {
+  .hamburger-panel {
+    position: absolute;
+    top: $headerHeight;
+    right: rem-calc(0);
+    bottom: 0;
+    background: $black;
+    z-index: 20;
+    transition: max-width ease-in-out 0.3s;
+    width: $hamburgerWidth;
+    overflow-x: hidden;
+    &.open {
+      max-width: $hamburgerWidth;
+      right: 0;
+      box-shadow: rgba(0, 0, 0, 0.4) rem-calc(4) rem-calc(32) rem-calc(20) rem-calc(3);
+    }
+    &.closed {
+      max-width: 0;
+      box-shadow: none;
+    }
+    .menu-item {
+      color: white;
+      text-align: center;
+      font-size: rem-calc(18);
+      padding: rem-calc(16);
+      line-height: rem-calc(30);
+      cursor: pointer;
+      margin: 0 rem-calc(40);
+      text-transform: uppercase;
+      &:not(:last-child) {
+        border-bottom: rem-calc(1) solid $greyAA;
+      }
+      a {
+        color: white;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .hamburger-panel,
+    .hamburger-icon {
+      display: none;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .hamburger-icon {
+      position: absolute;
+      top: rem-calc(24);
+      right: rem-calc(24);
+      width: rem-calc(30);
+      height: rem-calc(30);
+      cursor: pointer;
+      overflow-y: hidden;
+      &.cross {
+        height: rem-calc(24);
+        background-size: contain;
+        background: url('../../assets/images/cross.svg') no-repeat center;
+        > div {
+          display: none;
+        }
+      }
+      > div {
+        width: rem-calc(30);
+        height: rem-calc(4);
+        background-color: white;
+        margin: rem-calc(5) 0;
+        border-radius: 2px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

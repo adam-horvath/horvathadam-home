@@ -1,0 +1,198 @@
+@import 'styles/mixins';
+@import 'styles/colors';
+@import 'styles/constants';
+
+header {
+  height: rem-calc(70);
+  background-color: $black;
+  position: relative;
+  &.hovered:hover {
+    .header-container {
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      .overlay {
+        opacity: 1;
+      }
+      .weather-info {
+        opacity: 1;
+        transition: all 0.6s ease-in-out;
+      }
+    }
+    &.snow {
+      @include media-breakpoint-up(lg) {
+        .overlay {
+          @include background('snow.gif');
+        }
+      }
+    }
+    &.rain {
+      @include media-breakpoint-up(lg) {
+        .overlay {
+          @include background('rain.gif');
+        }
+      }
+    }
+    &.clouds {
+      @include media-breakpoint-up(lg) {
+        .overlay {
+          @include background('cloud.png');
+        }
+      }
+    }
+    &.sunset {
+      @include media-breakpoint-up(lg) {
+        .overlay {
+          @include background('sunset.gif');
+        }
+      }
+    }
+    &.night {
+      @include media-breakpoint-up(lg) {
+        .overlay {
+          @include background('moon.png');
+        }
+      }
+    }
+    &.sunshine {
+      @include media-breakpoint-up(lg) {
+        background-color: $sunshine;
+        .overlay {
+          @include background('sunshine.jpg', 3, 83, 139);
+        }
+      }
+    }
+    .menu {
+      display: none;
+    }
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: rem-calc(210);
+    height: $headerHeight;
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+  }
+  .weather-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $headerHeight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .weather-info {
+      color: white;
+      opacity: 0;
+      transition: none;
+    }
+  }
+  .easter-egg-container {
+    position: absolute;
+    top: $headerHeight;
+    left: 0;
+    width: rem-calc(372);
+    height: rem-calc(333);
+    background: no-repeat rem-calc(-100) rem-calc(-168);
+    &.spider {
+      background-image: url('../../assets/images/spider.gif');
+    }
+  }
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    transition: all 0.4s ease-in-out;
+    content: '';
+    position: absolute;
+    top: rem-calc(20);
+    left: 50%;
+    width: rem-calc(110);
+    height: rem-calc(110);
+    background-color: $greyAA;
+    border-radius: 50%;
+  }
+  &:after {
+    transition: all 0.4s ease-in-out;
+    content: '';
+    position: absolute;
+    bottom: rem-calc(50);
+    right: 25%;
+    width: rem-calc(50);
+    height: rem-calc(50);
+    background-color: $orange;
+    border-radius: 50%;
+  }
+  .name-container {
+    min-width: rem-calc(231);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-size: rem-calc(20);
+    padding: rem-calc(20);
+    position: relative;
+    font-family: JmhTypewriter;
+    &:before {
+      transition: all 0.4s ease-in-out;
+      z-index: 1;
+      content: '';
+      position: absolute;
+      bottom: rem-calc(7);
+      left: rem-calc(15);
+      width: rem-calc(50);
+      height: rem-calc(50);
+      background-color: $orange;
+      border-radius: 50%;
+    }
+    &:after {
+      transition: all 0.4s ease-in-out;
+      content: '';
+      position: absolute;
+      bottom: rem-calc(15);
+      right: rem-calc(12);
+      width: rem-calc(70);
+      height: rem-calc(70);
+      background-color: $greyAA;
+      border-radius: 50%;
+    }
+    &:hover {
+      &:before {
+        transform: scale(1.2) translate(rem-calc(-10), rem-calc(-18));
+      }
+      &:after {
+        transform: scale(0.7) translate(rem-calc(10), rem-calc(20));
+      }
+    }
+    .name {
+      z-index: 1;
+      text-transform: uppercase;
+    }
+    .prefix {
+      margin-right: rem-calc(6);
+      color: $greyAA;
+      z-index: 1;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .header-container {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}

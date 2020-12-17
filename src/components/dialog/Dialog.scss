@@ -1,0 +1,38 @@
+@import 'styles/colors';
+@import 'styles/mixins';
+
+.modal-container {
+  position: relative;
+}
+
+.modal-container .modal,
+.modal-container .modal-backdrop {
+  position: absolute;
+}
+
+.modal-content {
+  border-radius: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.modal-header {
+  background: $orange;
+  color: white;
+  padding: rem-calc(20);
+  position: relative;
+  border-radius: 0;
+  .h4 {
+    font-size: rem-calc(24);
+    font-weight: bold;
+  }
+}
+
+.modal-body {
+  padding: rem-calc(20);
+  background-color: $modalBg;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}

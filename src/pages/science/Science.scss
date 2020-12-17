@@ -1,0 +1,23 @@
+@import 'styles/mixins';
+
+.science-page {
+  .book-content {
+    @include media-breakpoint-down(md) {
+      margin-top: rem-calc(40);
+      .book-card {
+        max-width: rem-calc(380);
+        .avatar {
+          max-width: rem-calc(300);
+        }
+      }
+    }
+    @include media-breakpoint-down(xs) {
+      .book-card {
+        max-width: rem-calc(576);
+        .avatar {
+          max-width: rem-calc(300);
+        }
+      }
+    }
+  }
+}

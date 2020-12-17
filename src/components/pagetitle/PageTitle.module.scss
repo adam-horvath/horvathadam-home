@@ -1,0 +1,23 @@
+@import 'styles/colors';
+@import 'styles/mixins';
+
+.PageTitleContainer {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: $orange;
+  font-weight: bold;
+  font-size: rem-calc(30);
+  width: 100%;
+  padding: rem-calc(10) rem-calc(20);
+  position: absolute;
+  @include media-breakpoint-down(md) {
+    background: none;
+    color: $black;
+    padding-left: 0;
+    position: unset;
+  }
+  @include media-breakpoint-down(xs) {
+    padding-left: rem-calc(25);
+  }
+}

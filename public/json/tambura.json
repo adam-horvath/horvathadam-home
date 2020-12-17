@@ -1,0 +1,61 @@
+{
+  "pageTitle": "Kajkavci tamburaegyüttes",
+  "avatarText":
+    "1999. március 11-én alakult meg a Kajkavci tamburaegyüttes, azóta zenélek az együttesben, 2009 óta annak vezetőjeként. Négy lemezünk is megjelent, számos rangos országos díjat nyertünk.",
+  "prizesTitle": "Díjak, elismerések",
+  "prizes": [
+    {
+      "title": "Országos Díj a zenekar horvát kultúráért végzett munkásságáért",
+      "years": [2019],
+      "imageUrl": "/prizes/drzavna_nagrada.jpg"
+    },
+    {
+      "title": "Arany Páva Nagydíj",
+      "years": [2009, 2010, 2017],
+      "imageUrl": "/prizes/ap_nagydij.png"
+    },
+    {
+      "title": "Országos Arany Páva Díj",
+      "years": [2008, 2016],
+      "imageUrl": null
+    },
+    {
+      "title": "KÓTA-díj, Nemzetiségi kategória",
+      "years": [2006],
+      "imageUrl": "/prizes/kota.gif"
+    },
+    {
+      "title": "Országos Arany Minősítés",
+      "years": [2005],
+      "imageUrl": null
+    },
+    {
+      "title": "Országos Ezüst Minősítés",
+      "years": [2000],
+      "imageUrl": null
+    }
+  ],
+  "discsTitle": "Lemezek",
+  "discs": [
+    {
+      "title": "10 zlatnih godina",
+      "url": "https://kajkavci.hu/hu/diszkografia",
+      "year": 2009
+    },
+    {
+      "title": "Mi smo kajkavci",
+      "url": "https://kajkavci.hu/hu/diszkografia",
+      "year": 2007
+    },
+    {
+      "title": "Radujte se narodi",
+      "url": "https://kajkavci.hu/hu/diszkografia",
+      "year": 2006
+    },
+    {
+      "title": "Slatke tajne",
+      "url": "https://kajkavci.hu/hu/diszkografia",
+      "year": 2004
+    }
+  ]
+}

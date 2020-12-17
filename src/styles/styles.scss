@@ -1,0 +1,91 @@
+@import 'styles/mixins';
+@import 'styles/colors';
+
+a {
+  text-decoration: none;
+  color: $orange;
+  &:hover {
+    color: $orangeLight;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+menu {
+  padding-left: 0;
+}
+
+.top-content {
+  margin: rem-calc(100) 0 0;
+  padding: 0 rem-calc(20);
+  @include media-breakpoint-down(md) {
+    padding: 0;
+    margin-top: rem-calc(80);
+  }
+  @include media-breakpoint-down(xs) {
+    margin-left: rem-calc(-15);
+    width: calc(100% + #{rem-calc(30)});
+  }
+}
+
+.left-content {
+  @include media-breakpoint-down(xs) {
+    margin-top: rem-calc(40);
+  }
+}
+
+.avatar-card {
+  @include media-breakpoint-down(xs) {
+    box-shadow: none;
+  }
+  .content {
+    position: relative;
+    width: 100%;
+    padding-top: rem-calc(160);
+    img.avatar {
+      @include rounded-image(220);
+      position: absolute;
+      top: rem-calc(-100);
+      left: calc(50% - #{rem-calc(110)});
+    }
+  }
+  .social-container {
+    display: flex;
+    align-items: center;
+    a {
+      padding: 0;
+      img {
+        width: rem-calc(28);
+        height: rem-calc(28);
+        &.scholar {
+          width: rem-calc(32);
+          height: rem-calc(32);
+        }
+      }
+    }
+  }
+}
+
+.section-title {
+  font-size: rem-calc(24);
+  font-weight: bold;
+}
+
+.main-container {
+  padding-right: rem-calc(40);
+  @include media-breakpoint-down(md) {
+    padding-right: 0;
+  }
+  @include media-breakpoint-down(xs) {
+    padding-left: rem-calc(40);
+    padding-right: rem-calc(40);
+  }
+}
+
+.ImageLink {
+  color: $orange;
+  cursor: pointer;
+  &:hover {
+    color: $orangeLight;
+  }
+}

@@ -1,0 +1,35 @@
+@import 'styles/mixins';
+
+.dev-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: rem-calc(200);
+  height: rem-calc(200);
+  padding: rem-calc(10) rem-calc(40);
+  margin-top: rem-calc(16);
+  margin-right: rem-calc(16);
+  @include media-breakpoint-down(md) {
+    margin: 0 0 rem-calc(30);
+  }
+  @include media-breakpoint-down(xs) {
+    margin: rem-calc(16);
+  }
+  .icon-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .card-title {
+    font-size: rem-calc(20);
+    margin-bottom: 0;
+    padding-top: rem-calc(10);
+  }
+}

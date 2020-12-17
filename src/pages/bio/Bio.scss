@@ -1,0 +1,19 @@
+@import 'styles/mixins';
+
+.bio-page {
+  .fool {
+    position: absolute;
+    top: rem-calc(-170);
+    width: rem-calc(208);
+    left: 0;
+    @include media-breakpoint-up(xl) {
+      left: rem-calc(22);
+    }
+    @include media-breakpoint-only(lg) {
+      left: rem-calc(-8);
+    }
+    @include media-breakpoint-down(md) {
+      left: calc(50% - #{rem-calc(104)});
+    }
+  }
+}
