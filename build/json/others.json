@@ -1,0 +1,46 @@
+{
+  "pageTitle": "Egyebek",
+  "avatarText":
+    "Az élet több különböző területein egyaránt szeretem, ha valamit alkothatok. Szeretek sportolni, bár az utóbbi időben a focitól inkább a pingpong és a darts felé fordultam.",
+  "parts": [
+    {
+      "title": "Zeneszerzés",
+      "subtitle": "Szerzői lemezünkön (10 zlatnih godina) két dal zenéjét is én szereztem.",
+      "texts": [
+        {
+          "value": "Izjava ljubavi",
+          "additional": " (Szerelmi vallomás, 2003., szöveg: Szallmer János)",
+          "uri": "/works/izjava_ljubavi.mp3"
+        },
+        {
+          "value": "Tuga",
+          "additional": " (Bánat, 2004.)",
+          "uri": "/works/tuga.mp3"
+        }
+      ]
+    },
+    {
+      "title": "Menza-paródia eposz formájában",
+      "texts": [
+        {
+          "value": "Zengi ez isteni mű Adamosz diadalmát",
+          "additional": " (Gabrieli Piroska-Horváth Ádám, 1999.)",
+          "link": "/works/hoseposz.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Foci",
+      "subtitle":
+        "Két csapat színeiben is játszottam a soproni kispályás focibajnokság különböző osztályaiban, az elsőtől a negyedosztályig.",
+      "texts": [
+        {
+          "additional": "Tanqok"
+        },
+        {
+          "additional": "Közti Kextő"
+        }
+      ]
+    }
+  ]
+}

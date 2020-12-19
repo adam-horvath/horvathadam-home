@@ -1,0 +1,80 @@
+{
+  "pageTitle": "Szauna",
+  "avatarText":
+    "A szauna régóta fontos szerepet tölt be az életemben, 2018 márciusában pedig szaunamester is lettem. 2020 októberétől a hegykői Tornácos Házban tartok szaunaprogramokat.",
+  "saunaMaster": {
+    "title": "Szaunamester",
+    "texts": [
+      {
+        "value": "A "
+      },
+      {
+        "value": "Szaunaszeánsz",
+        "link": "https://www.szauna-szeansz.hu/"
+      },
+      {
+        "value": " képzésén "
+      },
+      {
+        "value": "szaunamester lettem",
+        "image": "/sauna/oklevel.jpg",
+        "modalTitle": "Szaunamester"
+      },
+      {
+        "value": " 2018 márciusában."
+      }
+    ]
+  },
+  "programs": {
+    "title": "Szaunaprogramok a Tornácos Házban",
+    "texts": [
+      {
+        "value": "2020. november 8.",
+        "link":
+        "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tornacos.hu%2Fhu%2Fhirek%2C-blog%2F37-szauna-ceremonia-a-tornacos-haz-wellness-udvaraban.html%3Ffbclid%3DIwAR2lrZHJi4joScCHjzNToj4918a3HuXVJ6Ik6nqCJypb0aRP1ySXrC6xwnQ&h=AT1IaM4wBNut4D3bwZcRQbUp7T5y-kPAhIak2Fi7Q6oT6V98y-XJI4s41uUGEgGYAi2z3tUZGWeWPCPUV1JD-8v6qimj05qdjjMgT2lFTMgVVPipWVU3GzBPBV3gQkm5xdQ-&__tn__=-UK-R&c[0]=AT1rhDmYOJkyU9RUQ26zzi-9rfQ_kT6lktd9dOUEIObEoO-EPDnkV_9Z9XTi0W2VTculTgrQOTKNCnrDVNlbRHYpd3cvK56rPYmTwmhm02u-cbl853YzlcS0jMdmuq5s6PrGWc49uSCWSzCT0nJ9XEpWcg"
+      },
+      {
+        "value": "2020. október 23."
+      }
+    ]
+  },
+  "favorites": {
+    "title": "Kedvenc helyeim",
+    "texts": [
+      {
+        "value": "Tornácos Ház, Hegykő",
+        "link": "https://www.tornacos.hu/hu/#wellness&gsc.tab=0"
+      },
+      {
+        "value": "Bükfürdő Thermal & Spa",
+        "link": "https://www.bukfurdo.hu/hu/szauna-1"
+      },
+      {
+        "value": "Caramell Premium Resort, Bükfürdő",
+        "link": "https://www.caramell.hu/?id1=spa-hu"
+      },
+      {
+        "value": "Sonnentherme, Lutzmannsburg",
+        "link": "https://www.sonnentherme.at/hu/szuelok/szauna"
+      }
+    ]
+  },
+  "rules": {
+    "title": "Hogyan szaunázzunk?",
+    "texts": [
+      {
+        "value":
+          "A szaunaetikettről és a helyes szaunázásról pl. itt olvashatsz hiteles forrásból: "
+      },
+      {
+        "value": "Szaunaetikett",
+        "link": "https://www.szauna-szeansz.hu/etikett-a-szaunaban.html"
+      },
+      {
+        "value": "A helyes szaunázás",
+        "link":
+          "https://www.szauna-szeansz.hu/a-helyes-szaunazas-szabalyai.html"
+      }
+    ]
+  }
+}
