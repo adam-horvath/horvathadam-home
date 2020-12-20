@@ -16,7 +16,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Suspense fallback=" ">
       <I18nextProvider i18n={i18n}>
-        <Router>
+        <Router basename={'/'}>
           <App />
         </Router>
       </I18nextProvider>
