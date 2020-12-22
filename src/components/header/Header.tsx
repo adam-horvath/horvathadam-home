@@ -53,7 +53,7 @@ const Header: FC<HeaderProps> = ({ coords }) => {
 
   const getWeather = (): string | null => {
     const storedWeather = localStorage.getItem(LocalStorageKey.CurrentWeather);
-    if (storedWeather === null) return null;
+    if (storedWeather === null || !coords) return null;
     const weather: WeatherModel = JSON.parse(storedWeather as string);
     return `${getEnumKeyByEnumValue(WeatherType, weather.weather[0].main)}, ${Math.round(weather.main.temp)}°C, ${
       weather.main.humidity
@@ -85,18 +85,22 @@ const Header: FC<HeaderProps> = ({ coords }) => {
         ...getEasterEggs(hovered, JSON.parse(localStorage.getItem(LocalStorageKey.CurrentWeather) as string)),
       })}
     >
-      <div className={'container header-container'}>
+      <div
+        className={classNames('container header-container', {
+          hideMenu: coords,
+        })}
+      >
         <div className={'name-container'} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
           <div className={'prefix'}>Dr.</div>
           <div className={'name'}>Horváth Ádám</div>
         </div>
-        <Menu />
+        <Menu className={coords ? 'hideMenu' : ''} />
       </div>
       <Hamburger openMenu={openMenu} toggleMenu={toggleMenu} />
       <div className={'weather-container'}>
         <div className={'weather-info'}>{getWeather()}</div>
       </div>
-      <div className={'overlay'} />
+      {coords ? <div className={'overlay'} /> : null}
       {eggsRef.current ? <div className={classNames('easter-egg-container', { ...getEasterEggsByDate() })} /> : null}
     </header>
   );

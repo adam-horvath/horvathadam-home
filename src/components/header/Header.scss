@@ -7,7 +7,7 @@ header {
   background-color: $black;
   position: relative;
   &.hovered:hover {
-    .header-container {
+    .header-container.hideMenu {
       &:before,
       &:after {
         display: none;
@@ -66,7 +66,9 @@ header {
       }
     }
     .menu {
-      display: none;
+      &.hideMenu {
+        display: none;
+      }
     }
   }
   .overlay {

@@ -10,10 +10,10 @@ import './App.scss';
 
 interface AppProps extends RouteComponentProps, GeolocatedProps {}
 
-export const App: FC<AppProps> = ({ location, coords, ...props }) => {
+export const App: FC<AppProps> = ({ location, coords, isGeolocationAvailable, isGeolocationEnabled, ...props }) => {
   return (
     <div className={'App'}>
-      <Header coords={coords} />
+      <Header coords={isGeolocationAvailable && isGeolocationEnabled ? coords : null} />
       <div className={'w-100 main-content'}>
         <div className={'position-relative container'}>
           <TransitionGroup>
