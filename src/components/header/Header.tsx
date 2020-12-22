@@ -51,8 +51,10 @@ const Header: FC<HeaderProps> = ({ coords }) => {
     return !lastUpdated || moment(lastUpdated).isBefore(moment().subtract(30, 'minute'));
   };
 
-  const getWeather = (): string => {
-    const weather: WeatherModel = JSON.parse(localStorage.getItem(LocalStorageKey.CurrentWeather) as string);
+  const getWeather = (): string | null => {
+    const storedWeather = localStorage.getItem(LocalStorageKey.CurrentWeather);
+    if (storedWeather === null) return null;
+    const weather: WeatherModel = JSON.parse(storedWeather as string);
     return `${getEnumKeyByEnumValue(WeatherType, weather.weather[0].main)}, ${Math.round(weather.main.temp)}°C, ${
       weather.main.humidity
     }% ${WeatherPhrases.Humidity}${weather.wind.speed > 10 ? `, ${WeatherPhrases.Windy}` : ''}`;
