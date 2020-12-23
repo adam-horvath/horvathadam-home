@@ -60,18 +60,25 @@ header {
       z-index: 1;
       &.cross {
         height: rem-calc(24);
-        background-size: contain;
-        background: url('../../assets/images/cross.svg') no-repeat center;
-        > div {
-          display: none;
+        .bar {
+          &.bar1 {
+            transform: rotate(-45deg) translate(-8px, 7px);
+          }
+          &.bar2 {
+            opacity: 0;
+          }
+          &.bar3 {
+            transform: rotate(45deg) translate(-5px, -5px);
+          }
         }
       }
-      > div {
+      .bar {
         width: rem-calc(30);
         height: rem-calc(4);
         background-color: white;
         margin: rem-calc(5) 0;
         border-radius: 2px;
+        transition: all ease-in-out 0.4s;
         &:first-child {
           margin-top: 0;
         }
@@ -79,27 +86,3 @@ header {
     }
   }
 }
-
-/*
-Bar: {
-    width: 35,
-    height: 5,
-    backgroundColor: theme.palette.white,
-    marginTop: 6,
-    marginBottom: 6,
-    marginLeft: 0,
-    marginRight: 0,
-    transition: '0.4s',
-  },
-  Bar1: {
-    '-webkit-transform': 'rotate(-45deg) translate(-8px, 7px)',
-    transform: 'rotate(-45deg) translate(-8px, 7px)',
-  },
-  Bar2: {
-    opacity: 0,
-  },
-  Bar3: {
-    '-webkit-transform': 'rotate(45deg) translate(-8px, -8px)',
-    transform: 'rotate(45deg) translate(-9px, -7px)',
-  },
-*/

@@ -91,3 +91,21 @@ export const Bio: FC<{}> = () => {
     </Page>
   );
 };
+
+/*
+{
+      "year": 2021,
+      "texts": [
+        {
+          "value": "Március 1-jétől az "
+        },
+        {
+          "value": "Erste Banknál",
+          "href": "https://www.erstebank.hu/hu/ebh-nyito"
+        },
+        {
+          "value": " fogok dolgozni mint szoftverfejlesztő."
+        }
+      ]
+    },
+* */

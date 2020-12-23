@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.2dc60e3b.chunk.css",
-    "main.js": "./static/js/main.62fef0c9.chunk.js",
+    "main.css": "./static/css/main.65864d09.chunk.css",
+    "main.js": "./static/js/main.c08683d1.chunk.js",
     "runtime-main.js": "./static/js/runtime-main.e2441ebf.js",
     "static/css/2.8000774e.chunk.css": "./static/css/2.8000774e.chunk.css",
     "static/js/2.b702802c.chunk.js": "./static/js/2.b702802c.chunk.js",
@@ -14,7 +14,6 @@
     "static/media/buk.3b632e07.jpg": "./static/media/buk.3b632e07.jpg",
     "static/media/Header.scss": "./static/media/sunshine.d4383b54.jpg",
     "static/media/confluence.93f013f9.png": "./static/media/confluence.93f013f9.png",
-    "static/media/Hamburger.scss": "./static/media/cross.6e64269b.svg",
     "static/media/d3.38444535.png": "./static/media/d3.38444535.png",
     "static/media/dev.73bf41ec.jpg": "./static/media/dev.73bf41ec.jpg",
     "static/media/facebook.2cb19f0b.svg": "./static/media/facebook.2cb19f0b.svg",
@@ -37,7 +36,7 @@
     "static/js/runtime-main.e2441ebf.js",
     "static/css/2.8000774e.chunk.css",
     "static/js/2.b702802c.chunk.js",
-    "static/css/main.2dc60e3b.chunk.css",
-    "static/js/main.62fef0c9.chunk.js"
+    "static/css/main.65864d09.chunk.css",
+    "static/js/main.c08683d1.chunk.js"
   ]
 }
