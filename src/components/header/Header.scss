@@ -137,6 +137,16 @@ header {
     background-color: $orange;
     border-radius: 50%;
   }
+  @include media-breakpoint-down(md) {
+    &.hideMenu {
+      .name-container {
+        &:after,
+        &:before {
+          transition: none;
+        }
+      }
+    }
+  }
   .name-container {
     min-width: rem-calc(231);
     display: flex;

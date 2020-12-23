@@ -40,9 +40,9 @@ export const Hamburger: FC<HamburgerProps> = ({ openMenu, toggleMenu }) => {
   return (
     <React.Fragment>
       <div ref={hamburgerIconRef} className={classNames('hamburger-icon', { cross: openMenu })} onClick={onMenuClick}>
-        <div />
-        <div />
-        <div />
+        <div className={classNames('bar', { bar1: openMenu })} />
+        <div className={classNames('bar', { bar2: openMenu })} />
+        <div className={classNames('bar', { bar3: openMenu })} />
       </div>
       <div ref={menuPanelRef} className={`hamburger-panel ${openMenu ? 'open' : 'closed'}`}>
         {routes.map((route) => {

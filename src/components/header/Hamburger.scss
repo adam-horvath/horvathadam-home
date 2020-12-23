@@ -12,6 +12,7 @@ header {
     z-index: 20;
     transition: max-width ease-in-out 0.3s;
     width: $hamburgerWidth;
+    height: fit-content;
     overflow-x: hidden;
     &.open {
       max-width: $hamburgerWidth;
@@ -56,6 +57,7 @@ header {
       height: rem-calc(30);
       cursor: pointer;
       overflow-y: hidden;
+      z-index: 1;
       &.cross {
         height: rem-calc(24);
         background-size: contain;
@@ -77,3 +79,27 @@ header {
     }
   }
 }
+
+/*
+Bar: {
+    width: 35,
+    height: 5,
+    backgroundColor: theme.palette.white,
+    marginTop: 6,
+    marginBottom: 6,
+    marginLeft: 0,
+    marginRight: 0,
+    transition: '0.4s',
+  },
+  Bar1: {
+    '-webkit-transform': 'rotate(-45deg) translate(-8px, 7px)',
+    transform: 'rotate(-45deg) translate(-8px, 7px)',
+  },
+  Bar2: {
+    opacity: 0,
+  },
+  Bar3: {
+    '-webkit-transform': 'rotate(45deg) translate(-8px, -8px)',
+    transform: 'rotate(45deg) translate(-9px, -7px)',
+  },
+*/
