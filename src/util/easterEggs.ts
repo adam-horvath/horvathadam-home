@@ -5,7 +5,7 @@ import { getEnumKeyByEnumValue } from './enums';
 import { formatDate } from './date';
 
 export const getEasterEggs = (hovered: boolean, weather: WeatherModel) => {
-  if (!hovered) return {};
+  if (!hovered || !weather) return {};
   const weatherType = getEnumKeyByEnumValue(WeatherType, weather.weather[0].main);
   const sunrise = moment(new Date(weather.sys.sunrise * 1000));
   const sunset = moment(new Date(weather.sys.sunset * 1000));
