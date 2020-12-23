@@ -87,7 +87,7 @@ const Header: FC<HeaderProps> = ({ coords }) => {
     >
       <div
         className={classNames('container header-container', {
-          hideMenu: !coords,
+          hideMenu: coords,
         })}
       >
         <div className={'name-container'} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>

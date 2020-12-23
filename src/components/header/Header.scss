@@ -138,12 +138,11 @@ header {
     border-radius: 50%;
   }
   @include media-breakpoint-down(md) {
-    &.hideMenu {
-      .name-container {
-        &:after,
-        &:before {
-          transition: none;
-        }
+    .name-container {
+      &:after,
+      &:before {
+        transition: none !important;
+        transform: none !important;
       }
     }
   }

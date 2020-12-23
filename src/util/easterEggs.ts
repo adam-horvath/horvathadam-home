@@ -7,8 +7,8 @@ import { formatDate } from './date';
 export const getEasterEggs = (hovered: boolean, weather: WeatherModel) => {
   if (!hovered) return {};
   const weatherType = getEnumKeyByEnumValue(WeatherType, weather.weather[0].main);
-  const sunrise = moment(new Date(weather.sys.sunrise));
-  const sunset = moment(new Date(weather.sys.sunset));
+  const sunrise = moment(new Date(weather.sys.sunrise * 1000));
+  const sunset = moment(new Date(weather.sys.sunset * 1000));
   if ([WeatherType.Snow, WeatherType.Rain, WeatherType.Clouds].includes(weatherType)) {
     return {
       snow: weatherType === WeatherType.Snow,

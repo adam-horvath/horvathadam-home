@@ -17,7 +17,7 @@ header {
     &.open {
       max-width: $hamburgerWidth;
       right: 0;
-      box-shadow: rgba(0, 0, 0, 0.4) rem-calc(4) rem-calc(32) rem-calc(20) rem-calc(3);
+      box-shadow: rgba(0, 0, 0, 0.25) rem-calc(-3) rem-calc(27) rem-calc(35) rem-calc(-1);
     }
     &.closed {
       max-width: 0;
