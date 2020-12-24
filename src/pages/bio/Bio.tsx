@@ -71,15 +71,15 @@ export const Bio: FC<{}> = () => {
             ? bioEvents.map((event: BioModel) => {
                 const result = (
                   <BioEvent year={year === event.year ? null : event.year}>
-                    {event.texts.map((eventText: BioEventText) =>
-                      eventText.href ? (
+                    {event.texts.map((eventText: BioEventText) => {
+                      return eventText.href ? (
                         <a href={eventText.href} target={'_blank'} rel={'noreferrer'}>
                           {eventText.value}
                         </a>
                       ) : (
                         eventText.value
-                      )
-                    )}
+                      );
+                    })}
                   </BioEvent>
                 );
                 year = event.year;
