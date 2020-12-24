@@ -1,6 +1,18 @@
+@import 'styles/mixins';
+
 .family-page {
-  img {
-    width: 100%;
-    height: auto;
+  .family-content {
+    @include media-breakpoint-down(md) {
+      margin-top: rem-calc(40);
+    }
+    //@include media-breakpoint-down(xs) {
+    //  padding-left: rem-calc(30);
+    //  padding-right: rem-calc(30);
+    //}
+    img {
+      width: 100%;
+      height: auto;
+      min-width: rem-calc(800);
+    }
   }
 }
