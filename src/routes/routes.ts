@@ -7,6 +7,7 @@ import { Development } from 'pages/development/Development';
 import { Tambura } from 'pages/tambura/Tambura';
 import { Sauna } from 'pages/sauna/Sauna';
 import { Others } from 'pages/others/Others';
+import { Family } from 'pages/family/Family';
 
 export interface Route {
   pathname: string;
@@ -21,12 +22,17 @@ export const routes: Route[] = [
     name: 'Életrajz',
   },
   {
-    pathname: '/science',
+    pathname: '/csalad',
+    component: Family,
+    name: 'Család'
+  },
+  {
+    pathname: '/tudomany',
     component: Science,
     name: 'Tudomány',
   },
   {
-    pathname: '/development',
+    pathname: '/fejlesztes',
     component: Development,
     name: 'Fejlesztés',
   },
@@ -36,12 +42,12 @@ export const routes: Route[] = [
     name: 'Tambura',
   },
   {
-    pathname: '/sauna',
+    pathname: '/szauna',
     component: Sauna,
     name: 'Szauna',
   },
   {
-    pathname: '/others',
+    pathname: '/egyebek',
     component: Others,
     name: 'Egyebek',
   },

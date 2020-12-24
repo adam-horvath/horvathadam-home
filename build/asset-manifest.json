@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "./static/css/main.65864d09.chunk.css",
-    "main.js": "./static/js/main.c08683d1.chunk.js",
+    "main.css": "./static/css/main.0b7387cd.chunk.css",
+    "main.js": "./static/js/main.3e3ff39c.chunk.js",
     "runtime-main.js": "./static/js/runtime-main.e2441ebf.js",
     "static/css/2.8000774e.chunk.css": "./static/css/2.8000774e.chunk.css",
-    "static/js/2.b702802c.chunk.js": "./static/js/2.b702802c.chunk.js",
+    "static/js/2.c440119b.chunk.js": "./static/js/2.c440119b.chunk.js",
     "index.html": "./index.html",
-    "static/js/2.b702802c.chunk.js.LICENSE.txt": "./static/js/2.b702802c.chunk.js.LICENSE.txt",
+    "static/js/2.c440119b.chunk.js.LICENSE.txt": "./static/js/2.c440119b.chunk.js.LICENSE.txt",
     "static/media/index.scss": "./static/media/jmh-typewriter.fef2ecdc.otf",
     "static/media/avatar.54dd38f7.jpg": "./static/media/avatar.54dd38f7.jpg",
     "static/media/book.e13a334a.png": "./static/media/book.e13a334a.png",
@@ -17,6 +17,7 @@
     "static/media/d3.38444535.png": "./static/media/d3.38444535.png",
     "static/media/dev.73bf41ec.jpg": "./static/media/dev.73bf41ec.jpg",
     "static/media/facebook.2cb19f0b.svg": "./static/media/facebook.2cb19f0b.svg",
+    "static/media/family.38d750b7.png": "./static/media/family.38d750b7.png",
     "static/media/fool.39161ea1.png": "./static/media/fool.39161ea1.png",
     "static/media/formik.9102fcb0.png": "./static/media/formik.9102fcb0.png",
     "static/media/kajkavci.15d213f2.png": "./static/media/kajkavci.15d213f2.png",
@@ -35,8 +36,8 @@
   "entrypoints": [
     "static/js/runtime-main.e2441ebf.js",
     "static/css/2.8000774e.chunk.css",
-    "static/js/2.b702802c.chunk.js",
-    "static/css/main.65864d09.chunk.css",
-    "static/js/main.c08683d1.chunk.js"
+    "static/js/2.c440119b.chunk.js",
+    "static/css/main.0b7387cd.chunk.css",
+    "static/js/main.3e3ff39c.chunk.js"
   ]
 }
