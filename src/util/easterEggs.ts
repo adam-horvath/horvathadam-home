@@ -39,6 +39,9 @@ export const getEasterEggsByDate = () => {
     case '12-25':
     case '12-26':
       return { christmas: true };
+    case '12-31':
+    case '01-01':
+      return { newYearsEve: true };
     default:
       return {};
   }
