@@ -35,6 +35,10 @@ export const getEasterEggsByDate = () => {
       return { spider: true };
     case '04-01':
       return { fool: true };
+    case '12-24':
+    case '12-25':
+    case '12-26':
+      return { christmas: true };
     default:
       return {};
   }

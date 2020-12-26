@@ -93,6 +93,7 @@ const Header: FC<HeaderProps> = ({ coords }) => {
         <div className={'name-container'} onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
           <div className={'prefix'}>Dr.</div>
           <div className={'name'}>Horváth Ádám</div>
+          <div className={classNames({ ...getEasterEggsByDate()   })} />
         </div>
         <Menu className={coords ? 'hideMenu' : ''} />
       </div>

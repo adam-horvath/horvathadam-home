@@ -196,6 +196,14 @@ header {
       color: $greyAA;
       z-index: 1;
     }
+    .christmas {
+      position: absolute;
+      width: rem-calc(67);
+      height: rem-calc(70);
+      top: 0;
+      right: rem-calc(-60);
+      background: url('../../assets/images/christmas.gif') no-repeat;
+    }
   }
 }
 
