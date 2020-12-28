@@ -20,6 +20,7 @@ export interface HeaderProps extends GeolocatedProps {}
 const Header: FC<HeaderProps> = ({ coords }) => {
   const [hovered, setHovered] = useState<boolean>(false);
   const [openMenu, setOpenMenu] = useState<boolean>(false);
+  const [openStickyMenu, setOpenStickyMenu] = useState<boolean>(false);
   const [offset, setOffset] = useState<boolean>(false);
   const offsetRef = useRef(offset);
   const [eggs, setEggs] = useState<boolean>(false);
@@ -30,6 +31,10 @@ const Header: FC<HeaderProps> = ({ coords }) => {
     document.addEventListener('click', handleClickPressed, false);
     window.onscroll = () => {
       const show = window.pageYOffset >= headerVisible;
+      if (show !== offsetRef.current) {
+        setOpenMenu(false);
+        setOpenStickyMenu(false);
+      }
       offsetRef.current = show;
       setOffset(show);
     };
@@ -86,6 +91,8 @@ const Header: FC<HeaderProps> = ({ coords }) => {
 
   const toggleMenu = () => setOpenMenu(!openMenu);
 
+  const toggleStickyMenu = () => setOpenStickyMenu(!openStickyMenu);
+
   const getNameContainer = (mouseMove: boolean) => {
     return (
       <div
@@ -105,7 +112,7 @@ const Header: FC<HeaderProps> = ({ coords }) => {
       <div className={classNames('sticky-header w-100', { show: offsetRef.current })}>
         <div className={'w-100 h-100 position-relative'}>
           <div className={'container header-container'}>{getNameContainer(false)}</div>
-          <Hamburger openMenu={openMenu} toggleMenu={toggleMenu} />
+          <Hamburger openMenu={openStickyMenu} toggleMenu={toggleStickyMenu} />
         </div>
       </div>
       {offsetRef.current ? null : (
