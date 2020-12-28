@@ -1,0 +1,1 @@
+export const headerVisible = 210;

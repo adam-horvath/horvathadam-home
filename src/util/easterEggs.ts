@@ -31,7 +31,8 @@ const isDaylight = (sunrise: Moment, sunset: Moment) =>
 
 export const getEasterEggsByDate = () => {
   switch (formatDate(new Date()).substring(5, 10)) {
-    case '10-31':
+    // case '10-31':
+    case '12-28':
       return { spider: true };
     case '04-01':
       return { fool: true };
