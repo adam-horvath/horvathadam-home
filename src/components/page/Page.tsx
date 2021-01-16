@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import classNames from 'classnames';
 
 import { PageTitle } from 'components/pagetitle/PageTitle';
@@ -11,6 +11,10 @@ interface PageProps {
 }
 
 const Page: FC<PageProps> = ({ className, children, title }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={classNames('page position-relative', className)}>
       {title ? (

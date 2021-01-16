@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "./static/css/main.e2f71dc9.chunk.css",
-    "main.js": "./static/js/main.3c2bcb47.chunk.js",
+    "main.css": "./static/css/main.9f68b9ce.chunk.css",
+    "main.js": "./static/js/main.4faada13.chunk.js",
     "runtime-main.js": "./static/js/runtime-main.e2441ebf.js",
     "static/css/2.8000774e.chunk.css": "./static/css/2.8000774e.chunk.css",
-    "static/js/2.4912ea07.chunk.js": "./static/js/2.4912ea07.chunk.js",
+    "static/js/2.abe35d26.chunk.js": "./static/js/2.abe35d26.chunk.js",
     "index.html": "./index.html",
-    "static/js/2.4912ea07.chunk.js.LICENSE.txt": "./static/js/2.4912ea07.chunk.js.LICENSE.txt",
+    "static/js/2.abe35d26.chunk.js.LICENSE.txt": "./static/js/2.abe35d26.chunk.js.LICENSE.txt",
     "static/media/index.scss": "./static/media/jmh-typewriter.fef2ecdc.otf",
     "static/media/avatar.54dd38f7.jpg": "./static/media/avatar.54dd38f7.jpg",
     "static/media/book.e13a334a.png": "./static/media/book.e13a334a.png",
@@ -36,8 +36,8 @@
   "entrypoints": [
     "static/js/runtime-main.e2441ebf.js",
     "static/css/2.8000774e.chunk.css",
-    "static/js/2.4912ea07.chunk.js",
-    "static/css/main.e2f71dc9.chunk.css",
-    "static/js/main.3c2bcb47.chunk.js"
+    "static/js/2.abe35d26.chunk.js",
+    "static/css/main.9f68b9ce.chunk.css",
+    "static/js/main.4faada13.chunk.js"
   ]
 }

@@ -123,6 +123,45 @@ header {
     position: -webkit-sticky;
     top: 0;
   }
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: rem-calc(210);
+    height: $headerHeight;
+    transition: all 0.6s ease-in-out;
+  }
+  &.snow {
+    .overlay {
+      @include background('snow.gif');
+    }
+  }
+  &.rain {
+    .overlay {
+      @include background('rain.gif');
+    }
+  }
+  &.clouds {
+    .overlay {
+      @include background('cloud.png');
+    }
+  }
+  &.sunset {
+    .overlay {
+      @include background('sunset.gif');
+    }
+  }
+  &.night {
+    .overlay {
+      @include background('moon.png');
+    }
+  }
+  &.sunshine {
+    background-color: $sunshine;
+    .overlay {
+      @include background('sunshine.jpg', 3, 83, 139);
+    }
+  }
   @include media-breakpoint-up(lg) {
     display: none;
   }

@@ -109,11 +109,17 @@ const Header: FC<HeaderProps> = ({ coords }) => {
 
   return (
     <>
-      <div className={classNames('sticky-header w-100', { show: offsetRef.current })}>
+      <div
+        className={classNames('sticky-header w-100', {
+          show: offsetRef.current,
+          ...getEasterEggs(true, JSON.parse(localStorage.getItem(LocalStorageKey.CurrentWeather) as string)),
+        })}
+      >
         <div className={'w-100 h-100 position-relative'}>
           <div className={'container header-container'}>{getNameContainer(false)}</div>
           <Hamburger openMenu={openStickyMenu} toggleMenu={toggleStickyMenu} />
         </div>
+        {coords ? <div className={'overlay'} /> : null}
       </div>
       {offsetRef.current ? null : (
         <header
