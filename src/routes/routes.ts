@@ -8,7 +8,6 @@ import { Tambura } from 'pages/tambura/Tambura';
 import { Sauna } from 'pages/sauna/Sauna';
 import { Others } from 'pages/others/Others';
 import { Family } from 'pages/family/Family';
-import Logs from 'pages/logs/Logs';
 
 export interface Route {
   pathname: string;
@@ -51,10 +50,5 @@ export const routes: Route[] = [
     pathname: '/egyebek',
     component: Others,
     name: 'Egyebek',
-  },
-  {
-    pathname: '/logs',
-    component: Logs,
-    name: 'Logs',
   },
 ];
