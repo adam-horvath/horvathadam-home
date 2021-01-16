@@ -36,7 +36,7 @@ const Header: FC<HeaderProps> = ({ coords }) => {
         setOpenStickyMenu(false);
       }
       if (show && !offsetRef.current && window.innerWidth < 992) {
-        toggleHover();
+        weatherUpdate();
       }
       offsetRef.current = show;
       setOffset(show);
@@ -78,6 +78,10 @@ const Header: FC<HeaderProps> = ({ coords }) => {
 
   const toggleHover = async () => {
     setHovered(!hovered);
+    await weatherUpdate();
+  };
+
+  const weatherUpdate = async () => {
     if (coords && coords.latitude && coords.longitude && shouldUpdateWeather()) {
       localStorage.setItem(LocalStorageKey.WeatherUpdatedAt, formatDateAndTime(new Date()));
       const {
@@ -117,7 +121,7 @@ const Header: FC<HeaderProps> = ({ coords }) => {
           show: offsetRef.current,
           ...getEasterEggs(true, JSON.parse(localStorage.getItem(LocalStorageKey.CurrentWeather) as string)),
         })}
-        onClick={toggleHover}
+        onClick={weatherUpdate}
       >
         <div className={'w-100 h-100 position-relative'}>
           <div className={'container header-container'}>{getNameContainer(false)}</div>
