@@ -130,6 +130,7 @@ header {
     width: rem-calc(210);
     height: $headerHeight;
     transition: all 0.6s ease-in-out;
+    z-index: -1;
   }
   &.snow {
     .overlay {
