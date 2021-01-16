@@ -35,6 +35,9 @@ const Header: FC<HeaderProps> = ({ coords }) => {
         setOpenMenu(false);
         setOpenStickyMenu(false);
       }
+      if (show && !offsetRef.current && window.innerWidth < 992) {
+        toggleHover();
+      }
       offsetRef.current = show;
       setOffset(show);
     };
@@ -114,6 +117,7 @@ const Header: FC<HeaderProps> = ({ coords }) => {
           show: offsetRef.current,
           ...getEasterEggs(true, JSON.parse(localStorage.getItem(LocalStorageKey.CurrentWeather) as string)),
         })}
+        onClick={toggleHover}
       >
         <div className={'w-100 h-100 position-relative'}>
           <div className={'container header-container'}>{getNameContainer(false)}</div>
