@@ -13,6 +13,7 @@ import { getEnumKeyByEnumValue } from 'util/enums';
 import { Menu } from './Menu';
 import { Hamburger } from './Hamburger';
 import { headerVisible } from 'util/constants';
+import { logs } from 'util/logs';
 import './Header.scss';
 
 export interface HeaderProps extends GeolocatedProps {}
@@ -82,6 +83,7 @@ const Header: FC<HeaderProps> = ({ coords }) => {
   };
 
   const weatherUpdate = async () => {
+    coords ? logs.push(`${coords.latitude}, ${coords.longitude}, ${shouldUpdateWeather()}`) : logs.push('no coords');
     if (coords && coords.latitude && coords.longitude && shouldUpdateWeather()) {
       localStorage.setItem(LocalStorageKey.WeatherUpdatedAt, formatDateAndTime(new Date()));
       const {
@@ -93,6 +95,8 @@ const Header: FC<HeaderProps> = ({ coords }) => {
         coords.longitude
       );
       localStorage.setItem(LocalStorageKey.CurrentWeather, JSON.stringify(weather));
+      logs.push(`${localStorage.getItem(LocalStorageKey.WeatherUpdatedAt)}`);
+      logs.push(`${localStorage.getItem(LocalStorageKey.CurrentWeather)}`);
     }
   };
 

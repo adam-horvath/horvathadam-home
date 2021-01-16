@@ -13,11 +13,15 @@ export const Menu: FC<MenuProps> = ({ className }) => {
   const location = useLocation();
   return (
     <menu className={classNames('menu', className)}>
-      {routes.map((route) => (
-        <Link to={route.pathname} key={route.pathname}>
-          <div className={classNames('menu-entry', { active: route.pathname === location.pathname })}>{route.name}</div>
-        </Link>
-      ))}
+      {routes
+        .filter((r) => r.pathname !== '/logs')
+        .map((route) => (
+          <Link to={route.pathname} key={route.pathname}>
+            <div className={classNames('menu-entry', { active: route.pathname === location.pathname })}>
+              {route.name}
+            </div>
+          </Link>
+        ))}
     </menu>
   );
 };
