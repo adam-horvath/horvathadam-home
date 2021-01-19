@@ -10441,6 +10441,10 @@ workbox-core@^5.1.4:
   version "5.1.4"
   resolved "https://registry.npmjs.org/workbox-core/-/workbox-core-5.1.4.tgz#8bbfb2362ecdff30e25d123c82c79ac65d9264f4"
 
+workbox-core@^6.0.2:
+  version "6.0.2"
+  resolved "https://images.cicd.erste.hu/repository/npm-remote/workbox-core/-/workbox-core-6.0.2.tgz#2f865cfe633890b4210fd6d6fdb049a6daed0914"
+
 workbox-expiration@^5.1.4:
   version "5.1.4"
   resolved "https://registry.npmjs.org/workbox-expiration/-/workbox-expiration-5.1.4.tgz#92b5df461e8126114943a3b15c55e4ecb920b163"
@@ -10479,6 +10483,12 @@ workbox-routing@^5.1.4:
   resolved "https://registry.npmjs.org/workbox-routing/-/workbox-routing-5.1.4.tgz#3e8cd86bd3b6573488d1a2ce7385e547b547e970"
   dependencies:
     workbox-core "^5.1.4"
+
+workbox-routing@^6.0.2:
+  version "6.0.2"
+  resolved "https://images.cicd.erste.hu/repository/npm-remote/workbox-routing/-/workbox-routing-6.0.2.tgz#8380bc322a2b1c44978df8ff6ae4e4d723f4e3f8"
+  dependencies:
+    workbox-core "^6.0.2"
 
 workbox-strategies@^5.1.4:
   version "5.1.4"
