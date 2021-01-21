@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { I18nextProvider } from 'react-i18next';
 import { createBrowserHistory } from 'history';
-import {registerRoute} from 'workbox-routing';
+import { registerRoute } from 'workbox-routing';
 import * as strategies from 'workbox-strategies';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
