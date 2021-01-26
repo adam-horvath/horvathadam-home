@@ -32,12 +32,10 @@ export function register(config?: Config) {
       process.env.PUBLIC_URL,
       window.location.href
     );
-    console.log(publicUrl);
     if (publicUrl.origin !== window.location.origin) {
       // Our service worker won't work if PUBLIC_URL is on a different origin
       // from what our page is served on. This might happen if a CDN is used to
       // serve assets; see https://github.com/facebook/create-react-app/issues/2374
-      console.log('OMG_LOL');
       return;
     }
 
@@ -61,11 +59,26 @@ export function register(config?: Config) {
         registerValidSW(swUrl, config);
       }
     });
+
+    window.addEventListener('install', (e: any) => {
+      e.waitUntil(
+        caches.open('horvathadam').then((cache: any) => {
+          return cache.addAll([
+            '/',
+            '/csalad',
+            '/tudomany',
+            '/fejlesztes',
+            '/tambura',
+            '/szauna',
+            '/egyebek',
+          ]);
+        })
+      );
+    });
   }
 }
 
 function registerValidSW(swUrl: string, config?: Config) {
-  console.log(swUrl);
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
