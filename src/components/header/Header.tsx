@@ -73,7 +73,7 @@ const Header: FC<HeaderProps> = ({ coords }) => {
     const weather: WeatherModel = JSON.parse(storedWeather as string);
     return `${getEnumKeyByEnumValue(WeatherType, weather.weather[0].main)}, ${Math.round(weather.main.temp)}°C, ${
       weather.main.humidity
-    }% ${WeatherPhrases.Humidity}${weather.wind.speed > 10 ? `, ${WeatherPhrases.Windy}` : ''}`;
+    }% ${WeatherPhrases.Humidity}${weather.wind.speed > 3 ? `, ${WeatherPhrases.Windy}` : ''}`;
   };
 
   const toggleHover = async () => {
