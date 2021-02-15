@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.cc7e4323.chunk.css",
-    "main.js": "./static/js/main.81cc5651.chunk.js",
+    "main.css": "./static/css/main.80d15069.chunk.css",
+    "main.js": "./static/js/main.a09253ca.chunk.js",
     "runtime-main.js": "./static/js/runtime-main.e2441ebf.js",
     "static/css/2.8000774e.chunk.css": "./static/css/2.8000774e.chunk.css",
     "static/js/2.f352cbe3.chunk.js": "./static/js/2.f352cbe3.chunk.js",
@@ -17,10 +17,13 @@
     "static/media/d3.38444535.png": "./static/media/d3.38444535.png",
     "static/media/dev.73bf41ec.jpg": "./static/media/dev.73bf41ec.jpg",
     "static/media/facebook.2cb19f0b.svg": "./static/media/facebook.2cb19f0b.svg",
-    "static/media/family.38d750b7.png": "./static/media/family.38d750b7.png",
+    "static/media/facebook_dark.09af4bbc.svg": "./static/media/facebook_dark.09af4bbc.svg",
+    "static/media/family.54b3d4d6.png": "./static/media/family.54b3d4d6.png",
+    "static/media/family_dark.2133c328.png": "./static/media/family_dark.2133c328.png",
     "static/media/fool.39161ea1.png": "./static/media/fool.39161ea1.png",
     "static/media/formik.9102fcb0.png": "./static/media/formik.9102fcb0.png",
     "static/media/kajkavci.15d213f2.png": "./static/media/kajkavci.15d213f2.png",
+    "static/media/kajkavci_dark.3dd0e483.png": "./static/media/kajkavci_dark.3dd0e483.png",
     "static/media/linkedin.d490b86f.svg": "./static/media/linkedin.d490b86f.svg",
     "static/media/material.97c77cdb.png": "./static/media/material.97c77cdb.png",
     "static/media/others.39119fa3.jpg": "./static/media/others.39119fa3.jpg",
@@ -37,7 +40,7 @@
     "static/js/runtime-main.e2441ebf.js",
     "static/css/2.8000774e.chunk.css",
     "static/js/2.f352cbe3.chunk.js",
-    "static/css/main.cc7e4323.chunk.css",
-    "static/js/main.81cc5651.chunk.js"
+    "static/css/main.80d15069.chunk.css",
+    "static/js/main.a09253ca.chunk.js"
   ]
 }

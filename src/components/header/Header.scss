@@ -109,6 +109,10 @@ header {
       background-image: url('../../assets/images/fireworks.gif');
     }
   }
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 0 0 7px $darkShadow;
+  }
 }
 
 .sticky-header {
@@ -165,6 +169,10 @@ header {
   }
   @include media-breakpoint-up(lg) {
     display: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 0 0 7px $darkShadow;
   }
 }
 

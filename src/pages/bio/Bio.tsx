@@ -4,6 +4,7 @@ import Page from 'components/page/Page';
 import { Card } from 'components/card/Card';
 import Avatar from 'assets/images/avatar.jpg';
 import Facebook from 'assets/images/facebook.svg';
+import FacebookDark from 'assets/images/facebook_dark.svg';
 import Scholar from 'assets/images/scholar.svg';
 import LinkedIn from 'assets/images/linkedin.svg';
 import Fool from 'assets/images/fool.png';
@@ -11,6 +12,7 @@ import { BioEvent } from './BioEvent';
 import { BioEventText, BioModel, BioPageModel } from 'models/Bio.model';
 import request from 'util/request';
 import { getEasterEggsByDate } from 'util/easterEggs';
+import { isDarkMode } from 'util/darkMode';
 import './Bio.scss';
 
 export const Bio: FC<{}> = () => {
@@ -49,7 +51,11 @@ export const Bio: FC<{}> = () => {
                   rel="noreferrer"
                   className={'mr-4'}
                 >
-                  <img src={Facebook} className={'facebook'} alt={'facebook'} />
+                  {isDarkMode() ? (
+                    <img src={FacebookDark} className={'facebook'} alt={'facebook'} />
+                  ) : (
+                    <img src={Facebook} className={'facebook'} alt={'facebook'} />
+                  )}
                 </a>
                 <a
                   href={'https://scholar.google.hu/citations?user=gI6UlQEAAAAJ'}

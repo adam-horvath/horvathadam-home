@@ -17,6 +17,10 @@
     max-width: $hamburgerWidth;
     right: 0;
     box-shadow: rgba(0, 0, 0, 0.2) rem-calc(-10) rem-calc(30) rem-calc(35) rem-calc(-1);
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow: -4px 7px 7px $darkShadow;
+    }
   }
   &.closed {
     max-width: 0;

@@ -4,12 +4,14 @@ import classNames from 'classnames';
 import Page from 'components/page/Page';
 import { Card } from 'components/card/Card';
 import Kajkavci from 'assets/images/kajkavci.png';
+import KajkavciDark from 'assets/images/kajkavci_dark.png';
 import TamburaAvatar from 'assets/images/tambura.jpg';
 import request from 'util/request';
 import { PrizeModel, TamburaPageModel } from 'models/Tambura.model';
 import { useDialogState } from 'components/dialog/useDialogState';
 import { Dialog } from 'components/dialog/Dialog';
 import './Tambura.scss';
+import { isDarkMode } from '../../util/darkMode';
 
 export const Tambura: FC<{}> = () => {
   const [tambura, setTambura] = useState<TamburaPageModel>();
@@ -53,7 +55,11 @@ export const Tambura: FC<{}> = () => {
               <div>{avatarText}</div>
               <div className={'social-container mt-3'}>
                 <a href={'https://kajkavci.hu'} target={'_blank'} rel="noreferrer" className={'mr-4'}>
-                  <img src={Kajkavci} className={'facebook'} alt={'facebook'} />
+                  {isDarkMode() ? (
+                    <img src={KajkavciDark} className={'kajkavci'} alt={'kajkavci'} />
+                  ) : (
+                    <img src={Kajkavci} className={'kajkavci'} alt={'kajkavci'} />
+                  )}
                 </a>
               </div>
             </div>

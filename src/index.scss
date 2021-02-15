@@ -31,6 +31,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+
+  @media (prefers-color-scheme: dark) {
+    color: white;
+    background-color: $black;
+  }
 }
 
 code {

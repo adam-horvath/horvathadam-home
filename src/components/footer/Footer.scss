@@ -10,4 +10,8 @@
   font-size: rem-calc(14);
   background-color: $black;
   color: white;
+
+  @media (prefers-color-scheme: dark) {
+    box-shadow: 0 0 7px $darkShadow;
+  }
 }
