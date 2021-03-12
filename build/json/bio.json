@@ -4,6 +4,21 @@
     "Üdvözöllek! Horváth Ádám vagyok, munkámat tekintve webfejlesztő. Ezen az oldalon viszont olyan aspektusból is megismerhetsz, mint a valamikori egyetemi oktató és kutató, a lokálpatrióta zenész, a szaunamester vagy a családapa. Jó böngészést!",
   "bioEvents": [
     {
+      "year": 2021,
+      "texts": [
+        {
+          "value": "Március 1-jén az "
+        },
+        {
+          "value": "Erste Bank Hungary",
+          "href": "https://www.erstebank.hu/hu/ebh-nyito"
+        },
+        {
+          "value": "-nél kezdtem dolgozni mint szenior szoftverfejlesztő."
+        }
+      ]
+    },
+    {
       "year": 2020,
       "texts": [
         {
