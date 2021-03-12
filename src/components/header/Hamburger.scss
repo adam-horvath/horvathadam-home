@@ -11,7 +11,7 @@
   z-index: 20;
   transition: max-width ease-in-out 0.3s;
   width: $hamburgerWidth;
-  height: fit-content;
+  height: rem-calc(440);
   overflow-x: hidden;
   &.open {
     max-width: $hamburgerWidth;
