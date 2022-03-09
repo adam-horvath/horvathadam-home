@@ -22,21 +22,14 @@ export const Sauna: FC<{}> = () => {
     })();
   }, []);
 
-  let pageTitle, avatarText, saunaMaster, programs, favorites, rules;
-
-  if (sauna) {
-    pageTitle = sauna.pageTitle;
-    avatarText = sauna.avatarText;
-    saunaMaster = sauna.saunaMaster;
-    programs = sauna.programs;
-    favorites = sauna.favorites;
-    rules = sauna.rules;
-  }
-
   const onImageOpen = (text: TextModel) => {
     setImage(text.image);
     setOpen(text.modalTitle || '');
   };
+
+  if (!sauna) return null;
+
+  const { pageTitle, avatarText, saunaMaster, programs, favorites, rules } = sauna;
 
   return (
     <Page className={'sauna-page'} title={pageTitle}>
