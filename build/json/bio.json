@@ -1,7 +1,6 @@
 {
   "pageTitle": "Életrajz",
-  "avatarText":
-    "Üdvözöllek! Horváth Ádám vagyok, munkámat tekintve webfejlesztő. Ezen az oldalon viszont olyan aspektusból is megismerhetsz, mint a valamikori egyetemi oktató és kutató, a lokálpatrióta zenész, a szaunamester vagy a családapa. Jó böngészést!",
+  "avatarText": "Üdvözöllek! Horváth Ádám vagyok, családapa, webfejlesztő, szaunamester, valamint amatőr népzenész.",
   "bioEvents": [
     {
       "year": 2021,
@@ -30,8 +29,7 @@
       "year": 2019,
       "texts": [
         {
-          "value":
-            "A helyi nemzetiségi önkormányzati választások után ismét a fertőhomoki Horvát Nemzetiségi Önkormányzat elnöke lettem."
+          "value": "A helyi nemzetiségi önkormányzati választások után ismét a fertőhomoki Horvát Nemzetiségi Önkormányzat elnöke lettem."
         }
       ]
     },
@@ -89,7 +87,7 @@
         },
         {
           "value": "Attrectónál",
-          "href": "http://beta.di.unito.it/index.php/english"
+          "href": "https://attrecto.com"
         },
         {
           "value": " kezdtem dolgozni frontend fejlesztőként."
@@ -130,8 +128,7 @@
       "year": 2014,
       "texts": [
         {
-          "value":
-            "A helyi nemzetiségi önkormányzati választások után a fertőhomoki Horvát Nemzetiségi Önkormányzat elnöke lettem."
+          "value": "A helyi nemzetiségi önkormányzati választások után a fertőhomoki Horvát Nemzetiségi Önkormányzat elnöke lettem."
         }
       ]
     },
@@ -163,8 +160,7 @@
       "year": 2010,
       "texts": [
         {
-          "value":
-            "Ősztől a Nyugat-magyarországi Egyetem Simonyi Károly Karának tanársegédje lettem. Ugyanezen őszön egy hónapot töltöttem a torinói "
+          "value": "Ősztől a Nyugat-magyarországi Egyetem Simonyi Károly Karának tanársegédje lettem. Ugyanezen őszön egy hónapot töltöttem a torinói "
         },
         {
           "value": "Universita di Torino Informatikai Karán",
@@ -179,8 +175,7 @@
       "year": 2010,
       "texts": [
         {
-          "value":
-            "A helyi kisebbségi önkormányzati választáson ismét a Horvát Kisebbségi Önkormányzat alelnöke lettem."
+          "value": "A helyi kisebbségi önkormányzati választáson ismét a Horvát Kisebbségi Önkormányzat alelnöke lettem."
         }
       ]
     },
@@ -195,8 +190,7 @@
           "href": "https://kajkavci.hu/hu/diszkografia"
         },
         {
-          "value":
-            " című szerzői lemeze. A lemez két dalának is én szereztem a zenéjét. Ebben az évben vettem át az együttes vezetését Szallmer Jánostól."
+          "value": " című szerzői lemeze. A lemez két dalának is én szereztem a zenéjét. Ebben az évben vettem át az együttes vezetését Szallmer Jánostól."
         }
       ]
     },
@@ -204,8 +198,7 @@
       "year": 2008,
       "texts": [
         {
-          "value":
-            "A tavaszi félévben óraadóként segítettem az informatikaoktatást volt középiskolámban, a Szent Orsolya Gimnáziumban."
+          "value": "A tavaszi félévben óraadóként segítettem az informatikaoktatást volt középiskolámban, a Szent Orsolya Gimnáziumban."
         }
       ]
     },
@@ -296,8 +289,7 @@
       "texts": [
         {
           "value": "Badacsonylábdihegyen",
-          "href":
-            "https://www.google.com/maps/place/Herczeg+Ferenc+strand/@46.7978188,17.4591653,13z/data=!4m8!1m2!2m1!1sbadacsonyl%C3%A1bdihegy+strand!3m4!1s0x476900e991d733e5:0xa77555a873ab7697!8m2!3d46.7899756!4d17.4735041"
+          "href": "https://www.google.com/maps/place/Herczeg+Ferenc+strand/@46.7978188,17.4591653,13z/data=!4m8!1m2!2m1!1sbadacsonyl%C3%A1bdihegy+strand!3m4!1s0x476900e991d733e5:0xa77555a873ab7697!8m2!3d46.7899756!4d17.4735041"
         },
         {
           "value": " megismerkedtem későbbi feleségemmel, Szeregnyi Zsuzsannával."
@@ -387,8 +379,7 @@
         },
         {
           "value": "Fertőhomokon",
-          "href":
-            "https://www.google.com/maps/place/Fert%C5%91homok,+9492/@47.6389177,16.6971553,12z/data=!3m1!4b1!4m5!3m4!1s0x476c19e3622bff55:0x400c4290c1e95f0!8m2!3d47.6196363!4d16.7710445"
+          "href": "https://www.google.com/maps/place/Fert%C5%91homok,+9492/@47.6389177,16.6971553,12z/data=!3m1!4b1!4m5!3m4!1s0x476c19e3622bff55:0x400c4290c1e95f0!8m2!3d47.6196363!4d16.7710445"
         },
         {
           "value": " élek."

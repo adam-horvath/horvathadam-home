@@ -29,7 +29,7 @@ export const Sauna: FC<{}> = () => {
 
   if (!sauna) return null;
 
-  const { pageTitle, avatarText, saunaMaster, programs, favorites, rules } = sauna;
+  const { pageTitle, avatarText, saunaMaster, programs, rules } = sauna;
 
   return (
     <Page className={'sauna-page'} title={pageTitle}>
@@ -79,24 +79,6 @@ export const Sauna: FC<{}> = () => {
                 : null}
             </div>
           </div>
-          <div className={'favorites-container mb-4'}>
-            <div className={'section-title mb-2'}>{favorites?.title}</div>
-            <div>
-              {favorites
-                ? favorites.texts.map((p) => {
-                    return p.link ? (
-                      <div className={'mb-2'}>
-                        <a href={p.link} target={'_blank'} rel={'noreferrer'}>
-                          {p.value}
-                        </a>
-                      </div>
-                    ) : (
-                      <div className={'mb-2'}>{p.value}</div>
-                    );
-                  })
-                : null}
-            </div>
-          </div>
           <div className={'rules-container mb-4'}>
             <div className={'section-title mb-2'}>{rules?.title}</div>
             <div>
@@ -126,7 +108,7 @@ export const Sauna: FC<{}> = () => {
         }}
       >
         <div className={'w-100 h-100 d-flex align-items-center justify-content-center'}>
-          <img src={`${process.env.REACT_APP_PUBLIC_URL}${image}`} />
+          <img alt={'szaunamester'} src={`${process.env.REACT_APP_PUBLIC_URL}${image}`} />
         </div>
       </Dialog>
     </Page>
